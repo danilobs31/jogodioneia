@@ -1,10 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://dn3fouhh8r8yw"]
+[gd_scene load_steps=9 format=3 uid="uid://dn3fouhh8r8yw"]
 
 [ext_resource type="Script" path="res://cenas/Menu.gd" id="1_clmuo"]
+[ext_resource type="Texture2D" uid="uid://ckvc0itjktw6q" path="res://ÍCONES/FundoDaBarra.png" id="2_7uclo"]
 [ext_resource type="Texture2D" uid="uid://gmrtycvg2odd" path="res://ÍCONES/Play button.png" id="2_bq1my"]
 [ext_resource type="Texture2D" uid="uid://uv0jhka7cbvw" path="res://ÍCONES/logo3.png" id="2_g78ro"]
 [ext_resource type="Texture2D" uid="uid://b8mth8c365hnt" path="res://ÍCONES/sair.png" id="3_3t33y"]
+[ext_resource type="Texture2D" uid="uid://bpbj8l4y7h4u4" path="res://ÍCONES/itchio icon.png" id="3_jlg0s"]
 [ext_resource type="Texture2D" uid="uid://mk1kovm0l46y" path="res://ÍCONES/Tutorial.png" id="4_2lof3"]
+[ext_resource type="Texture2D" uid="uid://cwemv7b1le63x" path="res://ÍCONES/icon instagram.png" id="4_ccl4g"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -16,6 +19,51 @@ offset_right = -3.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_clmuo")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+offset_left = 903.0
+offset_top = 339.0
+offset_right = 903.0
+offset_bottom = 1059.0
+scale = Vector2(1.92589, 0.60426)
+texture = ExtResource("2_7uclo")
+expand_mode = 1
+stretch_mode = 2
+flip_v = true
+
+[node name="Itchio" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
+offset_left = 12.4617
+offset_top = 327.674
+offset_right = 140.462
+offset_bottom = 455.674
+scale = Vector2(0.390959, 1.0643)
+texture = ExtResource("3_jlg0s")
+stretch_mode = 2
+
+[node name="Itchio" type="Button" parent="TextureRect/Itchio"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Instagram" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
+offset_left = 59.7125
+offset_top = 306.16
+offset_right = 187.713
+offset_bottom = 434.16
+scale = Vector2(0.491102, 1.41947)
+texture = ExtResource("4_ccl4g")
+
+[node name="Instagram" type="Button" parent="TextureRect/Instagram"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = -99.3858
+offset_top = 13.9905
+offset_right = -91.3858
+offset_bottom = 21.9905
+scale = Vector2(12.7293, 12.2891)
 
 [node name="MenuPrincipal" type="MarginContainer" parent="."]
 texture_filter = 1
@@ -41,15 +89,19 @@ layout_mode = 2
 texture = ExtResource("2_g78ro")
 
 [node name="Jogar" type="TextureRect" parent="MenuPrincipal/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(-6, 0)
 layout_mode = 2
 size_flags_vertical = 3
 texture = ExtResource("2_bq1my")
 stretch_mode = 2
 
 [node name="Jogar" type="Button" parent="MenuPrincipal/HBoxContainer/VBoxContainer/Jogar"]
-layout_mode = 0
-offset_right = 8.0
-offset_bottom = 8.0
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+offset_left = -2.0
+offset_top = 63.3333
+offset_right = 418.0
+offset_bottom = 71.3333
 
 [node name="Tutorial" type="TextureRect" parent="MenuPrincipal/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -57,6 +109,8 @@ texture = ExtResource("4_2lof3")
 stretch_mode = 2
 
 [node name="Tutorial" type="Button" parent="MenuPrincipal/HBoxContainer/VBoxContainer/Tutorial"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
 show_behind_parent = true
 layout_mode = 0
 offset_left = -6.0
@@ -71,12 +125,13 @@ texture = ExtResource("3_3t33y")
 stretch_mode = 2
 
 [node name="Sair" type="Button" parent="MenuPrincipal/HBoxContainer/VBoxContainer/Sair"]
+modulate = Color(1, 1, 1, 0)
 show_behind_parent = true
 layout_mode = 0
 offset_left = -8.0
 offset_top = 39.7778
 offset_bottom = 47.7778
-scale = Vector2(18.3065, 6.15379)
+scale = Vector2(18.7599, 7.09472)
 
 [node name="MenuOpcoes" type="VBoxContainer" parent="MenuPrincipal/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -88,6 +143,8 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
 
+[connection signal="pressed" from="TextureRect/Itchio/Itchio" to="." method="_on_itchio_pressed"]
+[connection signal="pressed" from="TextureRect/Instagram/Instagram" to="." method="_on_instagram_pressed"]
 [connection signal="pressed" from="MenuPrincipal/HBoxContainer/VBoxContainer/Jogar/Jogar" to="." method="_on_jogar_pressed"]
 [connection signal="pressed" from="MenuPrincipal/HBoxContainer/VBoxContainer/Tutorial/Tutorial" to="." method="_on_tutorial_pressed"]
 [connection signal="pressed" from="MenuPrincipal/HBoxContainer/VBoxContainer/Sair/Sair" to="." method="_on_sair_pressed"]

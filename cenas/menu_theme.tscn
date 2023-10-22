@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhg5igy8fmols"]
+
+[ext_resource type="AudioStream" uid="uid://bcrlyv3jl6dph" path="res://Musicas/MENU_THEME.ogg" id="1_0giig"]
+
+[node name="MENU_THEME" type="AudioStreamPlayer"]
+stream = ExtResource("1_0giig")
+volume_db = 10.024
+autoplay = true

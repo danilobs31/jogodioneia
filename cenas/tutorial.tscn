@@ -23,7 +23,7 @@ offset_left = 40.0
 offset_top = 40.0
 offset_right = 168.0
 offset_bottom = 168.0
-scale = Vector2(0.794289, 0.564115)
+scale = Vector2(0.68048, 0.483287)
 texture = ExtResource("2_5bsmb")
 
 [node name="Button" type="Button" parent="TextureRect2"]

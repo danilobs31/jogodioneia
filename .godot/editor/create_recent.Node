@@ -1,7 +1,8 @@
 Button
 TextureRect
 VBoxContainer
-CenterContainer
 HBoxContainer
+AudioStreamPlayer
+CenterContainer
 MarginContainer
 Label

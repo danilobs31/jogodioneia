@@ -2,3 +2,5 @@ res://cenas/Menu.gd
 res://cenas/Menu.tscn
 res://cenas/tutorial.tscn
 res://cenas/tutorial.gd
+res://cenas/menu_theme.tscn
+res://scripts/menu_theme.gd

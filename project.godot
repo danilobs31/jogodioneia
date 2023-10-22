@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="Jogo Game Jam"
+run/main_scene="res://cenas/Menu.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+MenuTheme="*res://cenas/menu_theme.tscn"
 
 [display]
 
