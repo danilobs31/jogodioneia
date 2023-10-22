@@ -10,6 +10,8 @@ func _ready():
 func _process(delta):
 	pass
 
+func _on_jogar_pressed():
+	get_tree().change_scene_to_file("res://cenas/mundo.tscn")
 
-func _on_button_2_pressed() -> void:
+func _on_sair_pressed():
 	get_tree().quit() 
