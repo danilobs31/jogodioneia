@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=3 uid="uid://dn3fouhh8r8yw"]
+
+[ext_resource type="Script" path="res://cenas/Menu.gd" id="1_clmuo"]
+
+[sub_resource type="MeshTexture" id="MeshTexture_w3mhm"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.0
+offset_right = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_clmuo")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 219.0
+offset_right = 34.0
+offset_bottom = 227.0
+scale = Vector2(49.1215, 12.1)
+icon = SubResource("MeshTexture_w3mhm")
+
+[node name="Jogar" type="Label" parent="Button"]
+layout_mode = 0
+offset_left = 1.85255
+offset_top = -1.98348
+offset_right = 71.8525
+offset_bottom = 24.0165
+scale = Vector2(0.103706, 0.460662)
+text = "Jogar"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 510.0
+offset_right = 28.0
+offset_bottom = 518.0
+scale = Vector2(49.1215, 12.1)
+icon = SubResource("MeshTexture_w3mhm")
+
+[node name="Sair" type="Label" parent="Button2"]
+layout_mode = 0
+offset_left = 1.85255
+offset_top = -1.98348
+offset_right = 71.8525
+offset_bottom = 24.0165
+scale = Vector2(0.103706, 0.460662)
+text = "Sair
+"
+
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
