@@ -1,16 +1,18 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697940548
+::res://::1697947508
 icon.svg::CompressedTexture2D::6863083613399795653::1697940433::1697940547::1::::<><>::
 README.md::TextFile::-1::1697940433::0::1::::<><>::
-::res://senas/::1697940577
-mundo.tscn::PackedScene::6308302435688460003::1697940577::0::1::::<><>::uid://blq30rcr77u8o::::res://Texturas/Grama.png<>uid://dhdtjo4e21a0t::::res://SPRITES/arvore3.png
+::res://cenas/::1697942845
+Menu.gd::GDScript::-1::1697942116::0::1::::<>Control<>::
+Menu.tscn::PackedScene::8129849243209386754::1697942845::0::1::::<><>::res://cenas/Menu.gd
+mundo.tscn::PackedScene::6308302435688460003::1697940577::0::1::::<><>::uid://blq30rcr77u8o
 ::res://Sons/::1697940548
 Barulhão.mp3::AudioStreamMP3::4511134459194107318::1697940433::1697940545::1::::<><>::
 Drone_Start.mp3::AudioStreamMP3::6601445801428972025::1697940433::1697940545::1::::<><>::
 Serra_Comeco1.mp3::AudioStreamMP3::3632666337579939793::1697940433::1697940545::1::::<><>::
 Serra_Comeco2.mp3::AudioStreamMP3::7052229911975283156::1697940433::1697940545::1::::<><>::
 THEME_GAME_OVER__PROJETO_CHAINSAW (1).wav::AudioStreamWAV::6310453379586321722::1697940433::1697940548::1::::<><>::
-::res://SPRITES/::1697940548
+::res://SPRITES/::1697947508
 arvore3.png::CompressedTexture2D::7657947565160491685::1697940433::1697940548::1::::<><>::
 broto3.png::CompressedTexture2D::4120150560206675989::1697940433::1697940548::1::::<><>::
 toco3.png::CompressedTexture2D::5616165283569487603::1697940433::1697940548::1::::<><>::
@@ -18,12 +20,14 @@ toco3.png::CompressedTexture2D::5616165283569487603::1697940433::1697940548::1::
 Grama crescendo.png::CompressedTexture2D::7341708934264600140::1697940433::1697940548::1::::<><>::
 Grama.png::CompressedTexture2D::3193273625224505312::1697940433::1697940548::1::::<><>::
 Terra.png::CompressedTexture2D::4893459429233873095::1697940433::1697940548::1::::<><>::
-::res://ÍCONES/::1697940548
+::res://ÍCONES/::1697947508
 FundoDaBarra.png::CompressedTexture2D::5518248265396077086::1697940433::1697940548::1::::<><>::
 Fundo_Quadrado.png::CompressedTexture2D::1643889769290015396::1697940433::1697940548::1::::<><>::
 Grande_BarraSemFundo.png::CompressedTexture2D::6055608201277854903::1697940433::1697940548::1::::<><>::
 Moldura_Serra.png::CompressedTexture2D::5339578649798874417::1697940433::1697940548::1::::<><>::
 OlhoCirculo.png::CompressedTexture2D::5890536949376910086::1697940433::1697940548::1::::<><>::
+Play button.png::CompressedTexture2D::446972978451386233::1697947481::1697947508::1::::<><>::
+sair.png::CompressedTexture2D::4728592917891753673::1697947481::1697947508::1::::<><>::
 Sementes_Icones.png::CompressedTexture2D::8799308265503517262::1697940433::1697940548::1::::<><>::
 Serra.png::CompressedTexture2D::8198661911590517399::1697940433::1697940548::1::::<><>::
 Seta.png::CompressedTexture2D::8349083065092582836::1697940433::1697940548::1::::<><>::

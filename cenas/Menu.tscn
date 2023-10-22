@@ -15,6 +15,16 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_clmuo")
 
+[node name="MenuPrincipal" type="MarginContainer" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 120
+theme_override_constants/margin_top = 80
+theme_override_constants/margin_right = 120
+theme_override_constants/margin_bottom = 80
+
 [node name="jogar" type="Button" parent="."]
 layout_mode = 0
 offset_left = 26.0
