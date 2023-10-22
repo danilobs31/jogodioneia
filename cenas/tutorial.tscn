@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://dau31gkx31ab4"]
+
+[ext_resource type="Script" path="res://cenas/tutorial.gd" id="1_c2xj0"]
+[ext_resource type="Texture2D" uid="uid://c7f42srjx37cd" path="res://ÍCONES/voltar.png" id="2_5bsmb"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_c2xj0")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 168.0
+offset_bottom = 168.0
+scale = Vector2(0.794289, 0.564115)
+texture = ExtResource("2_5bsmb")
+
+[node name="Button" type="Button" parent="TextureRect2"]
+modulate = Color(1, 0, 1, 0)
+show_behind_parent = true
+texture_filter = 1
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+scale = Vector2(18.6765, 16.9642)
+
+[connection signal="mouse_entered" from="TextureRect2/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="pressed" from="TextureRect2/Button" to="." method="_on_button_pressed"]

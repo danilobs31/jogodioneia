@@ -1,3 +1,4 @@
-res://senas/mundo.tscn
-res://cenas/Menu.tscn
 res://cenas/Menu.gd
+res://cenas/Menu.tscn
+res://cenas/tutorial.tscn
+res://cenas/tutorial.gd

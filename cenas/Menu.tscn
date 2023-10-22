@@ -1,8 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://dn3fouhh8r8yw"]
+[gd_scene load_steps=6 format=3 uid="uid://dn3fouhh8r8yw"]
 
 [ext_resource type="Script" path="res://cenas/Menu.gd" id="1_clmuo"]
-
-[sub_resource type="MeshTexture" id="MeshTexture_w3mhm"]
+[ext_resource type="Texture2D" uid="uid://gmrtycvg2odd" path="res://ÍCONES/Play button.png" id="2_bq1my"]
+[ext_resource type="Texture2D" uid="uid://uv0jhka7cbvw" path="res://ÍCONES/logo3.png" id="2_g78ro"]
+[ext_resource type="Texture2D" uid="uid://b8mth8c365hnt" path="res://ÍCONES/sair.png" id="3_3t33y"]
+[ext_resource type="Texture2D" uid="uid://mk1kovm0l46y" path="res://ÍCONES/Tutorial.png" id="4_2lof3"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -18,49 +20,74 @@ script = ExtResource("1_clmuo")
 [node name="MenuPrincipal" type="MarginContainer" parent="."]
 texture_filter = 1
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -71.0
+offset_top = -55.0
+offset_right = 615.0
+offset_bottom = 825.0
+scale = Vector2(1, 0.9)
 theme_override_constants/margin_left = 120
 theme_override_constants/margin_top = 80
 theme_override_constants/margin_right = 120
 theme_override_constants/margin_bottom = 80
 
-[node name="jogar" type="Button" parent="."]
-layout_mode = 0
-offset_left = 26.0
-offset_top = 219.0
-offset_right = 34.0
-offset_bottom = 227.0
-scale = Vector2(49.1215, 12.1)
-icon = SubResource("MeshTexture_w3mhm")
+[node name="HBoxContainer" type="HBoxContainer" parent="MenuPrincipal"]
+layout_mode = 2
 
-[node name="label" type="Label" parent="jogar"]
-layout_mode = 0
-offset_left = 1.85255
-offset_top = -1.98348
-offset_right = 71.8525
-offset_bottom = 24.0165
-scale = Vector2(0.103706, 0.460662)
-text = "Jogar"
+[node name="VBoxContainer" type="VBoxContainer" parent="MenuPrincipal/HBoxContainer"]
+layout_mode = 2
 
-[node name="sair" type="Button" parent="."]
-layout_mode = 0
-offset_left = 20.0
-offset_top = 510.0
-offset_right = 28.0
-offset_bottom = 518.0
-scale = Vector2(49.1215, 12.1)
-icon = SubResource("MeshTexture_w3mhm")
+[node name="Logo" type="TextureRect" parent="MenuPrincipal/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_g78ro")
 
-[node name="label" type="Label" parent="sair"]
-layout_mode = 0
-offset_left = 1.85255
-offset_top = -1.98348
-offset_right = 71.8525
-offset_bottom = 24.0165
-scale = Vector2(0.103706, 0.460662)
-text = "Sair
-"
+[node name="Jogar" type="TextureRect" parent="MenuPrincipal/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("2_bq1my")
+stretch_mode = 2
 
-[connection signal="pressed" from="jogar" to="." method="_on_jogar_pressed"]
-[connection signal="pressed" from="sair" to="." method="_on_sair_pressed"]
+[node name="Jogar" type="Button" parent="MenuPrincipal/HBoxContainer/VBoxContainer/Jogar"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Tutorial" type="TextureRect" parent="MenuPrincipal/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("4_2lof3")
+stretch_mode = 2
+
+[node name="Tutorial" type="Button" parent="MenuPrincipal/HBoxContainer/VBoxContainer/Tutorial"]
+show_behind_parent = true
+layout_mode = 0
+offset_left = -6.0
+offset_top = 8.88892
+offset_right = 2.0
+offset_bottom = 16.8889
+scale = Vector2(17.9303, 6.04006)
+
+[node name="Sair" type="TextureRect" parent="MenuPrincipal/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_3t33y")
+stretch_mode = 2
+
+[node name="Sair" type="Button" parent="MenuPrincipal/HBoxContainer/VBoxContainer/Sair"]
+show_behind_parent = true
+layout_mode = 0
+offset_left = -8.0
+offset_top = 39.7778
+offset_bottom = 47.7778
+scale = Vector2(18.3065, 6.15379)
+
+[node name="MenuOpcoes" type="VBoxContainer" parent="MenuPrincipal/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Social" type="TextureRect" parent="MenuPrincipal/HBoxContainer"]
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="MenuPrincipal/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[connection signal="pressed" from="MenuPrincipal/HBoxContainer/VBoxContainer/Jogar/Jogar" to="." method="_on_jogar_pressed"]
+[connection signal="pressed" from="MenuPrincipal/HBoxContainer/VBoxContainer/Tutorial/Tutorial" to="." method="_on_tutorial_pressed"]
+[connection signal="pressed" from="MenuPrincipal/HBoxContainer/VBoxContainer/Sair/Sair" to="." method="_on_sair_pressed"]

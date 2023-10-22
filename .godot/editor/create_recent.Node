@@ -1,7 +1,7 @@
-CenterContainer
-VBoxContainer
-HBoxContainer
+Button
 TextureRect
+VBoxContainer
+CenterContainer
+HBoxContainer
 MarginContainer
 Label
-Button
