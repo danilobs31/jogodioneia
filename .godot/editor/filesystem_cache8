@@ -1,19 +1,25 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697993176
+::res://::1698015608
 icon.svg::CompressedTexture2D::6863083613399795653::1697940433::1697940547::1::::<><>::
 README.md::TextFile::-1::1697940433::0::1::::<><>::
-::res://cenas/::1697996232
-Menu.gd::GDScript::-1::1697995099::0::1::::<>Control<>::
-Menu.tscn::PackedScene::8129849243209386754::1697996232::0::1::::<><>::res://cenas/Menu.gd<>uid://gmrtycvg2odd::::res://ÍCONES/Play button.png<>uid://uv0jhka7cbvw::::res://ÍCONES/logo3.png<>uid://b8mth8c365hnt::::res://ÍCONES/sair.png<>uid://mk1kovm0l46y::::res://ÍCONES/Tutorial.png
+::res://cenas/::1698011965
+game_over.tscn::PackedScene::4764145928641849877::1698011858::0::1::::<><>::
+Menu.tscn::PackedScene::8129849243209386754::1698011965::0::1::::<><>::res://scripts/Menu.gd<>uid://ckvc0itjktw6q::::res://ÍCONES/FundoDaBarra.png<>uid://gmrtycvg2odd::::res://ÍCONES/Play button.png<>uid://uv0jhka7cbvw::::res://ÍCONES/logo3.png<>uid://b8mth8c365hnt::::res://ÍCONES/sair.png<>uid://bpbj8l4y7h4u4::::res://ÍCONES/itchio icon.png<>uid://mk1kovm0l46y::::res://ÍCONES/Tutorial.png<>uid://cwemv7b1le63x::::res://ÍCONES/icon instagram.png
+menu_theme.tscn::PackedScene::2891965005539865232::1698011803::0::1::::<><>::uid://bcrlyv3jl6dph::::res://Musicas/MENU_THEME.ogg
 mundo.tscn::PackedScene::6308302435688460003::1697940577::0::1::::<><>::uid://blq30rcr77u8o
-menu_theme.tscn::PackedScene::2891965005539865232::1697996219::0::1::::<><>::uid://bcrlyv3jl6dph::::res://Musicas/MENU_THEME.ogg
-tutorial.gd::GDScript::-1::1697992027::0::1::::<>Control<>::
-tutorial.tscn::PackedScene::7202296444271086127::1697996219::0::1::::<><>::res://cenas/tutorial.gd<>uid://c7f42srjx37cd::::res://ÍCONES/voltar.png
+tutorial.tscn::PackedScene::7202296444271086127::1698011955::0::1::::<><>::res://scripts/tutorial.gd<>uid://c7f42srjx37cd::::res://ÍCONES/voltar.png
+::res://imagens/::1698016787
+2.png::CompressedTexture2D::5683238981539492588::1698015611::1698015870::1::::<><>::
+Gj+ 2023.jpg::CompressedTexture2D::2647663009017216679::1698015618::1698015875::1::::<><>::
+render_1.png::CompressedTexture2D::3403857047507057339::1698016787::1698016790::1::::<><>::
 ::res://Musicas/::1697994229
 MENU_THEME.ogg::AudioStreamOggVorbis::2562604685432048217::1697992401::1697994229::1::::<><>::
 THEME_PRINCIPAL.ogg::AudioStreamOggVorbis::3569693300082654812::1697992301::1697992324::1::::<><>::
-::res://scripts/::1697994238
+::res://scripts/::1698011964
+game_over.gd::GDScript::-1::1698011944::0::1::::<>Control<>::
+Menu.gd::GDScript::-1::1698007837::0::1::::<>Control<>::
 menu_theme.gd::GDScript::-1::1697994238::0::1::::<>AudioStreamPlayer<>::
+tutorial.gd::GDScript::-1::1697992027::0::1::::<>Control<>::
 ::res://Sons/::1697940548
 Barulhão.mp3::AudioStreamMP3::4511134459194107318::1697940433::1697940545::1::::<><>::
 Drone_Start.mp3::AudioStreamMP3::6601445801428972025::1697940433::1697940545::1::::<><>::
@@ -28,9 +34,10 @@ toco3.png::CompressedTexture2D::5616165283569487603::1697940433::1697940548::1::
 Grama crescendo.png::CompressedTexture2D::7341708934264600140::1697940433::1697940548::1::::<><>::
 Grama.png::CompressedTexture2D::3193273625224505312::1697940433::1697940548::1::::<><>::
 Terra.png::CompressedTexture2D::4893459429233873095::1697940433::1697940548::1::::<><>::
-::res://ÍCONES/::1697997878
+::res://ÍCONES/::1698015870
 FundoDaBarra.png::CompressedTexture2D::5518248265396077086::1697940433::1697940548::1::::<><>::
 Fundo_Quadrado.png::CompressedTexture2D::1643889769290015396::1697940433::1697940548::1::::<><>::
+gameover.png::CompressedTexture2D::8705169431012075395::1698015860::1698015870::1::::<><>::
 Grande_BarraSemFundo.png::CompressedTexture2D::6055608201277854903::1697940433::1697940548::1::::<><>::
 icon instagram.png::CompressedTexture2D::6326021227512577819::1697997878::1697997884::1::::<><>::
 itchio icon.png::CompressedTexture2D::3441923723841108273::1697997376::1697997884::1::::<><>::
@@ -45,3 +52,4 @@ Seta.png::CompressedTexture2D::8349083065092582836::1697940433::1697940548::1:::
 triangulo.png::CompressedTexture2D::6581235706084646773::1697997008::1697997208::1::::<><>::
 Tutorial.png::CompressedTexture2D::864507169294858578::1697996199::1697996200::1::::<><>::
 voltar.png::CompressedTexture2D::7031016233921966711::1697990056::1697990058::1::::<><>::
+::res://ÍCONES/HUD/::1698015595

@@ -4,3 +4,4 @@ res://cenas/tutorial.tscn
 res://cenas/tutorial.gd
 res://cenas/menu_theme.tscn
 res://scripts/menu_theme.gd
+res://cenas/game_over.tscn

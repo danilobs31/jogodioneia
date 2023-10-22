@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://dn3fouhh8r8yw"]
 
-[ext_resource type="Script" path="res://cenas/Menu.gd" id="1_clmuo"]
+[ext_resource type="Script" path="res://scripts/Menu.gd" id="1_aeyrk"]
 [ext_resource type="Texture2D" uid="uid://ckvc0itjktw6q" path="res://ÍCONES/FundoDaBarra.png" id="2_7uclo"]
 [ext_resource type="Texture2D" uid="uid://gmrtycvg2odd" path="res://ÍCONES/Play button.png" id="2_bq1my"]
 [ext_resource type="Texture2D" uid="uid://uv0jhka7cbvw" path="res://ÍCONES/logo3.png" id="2_g78ro"]
@@ -18,7 +18,7 @@ offset_left = -3.0
 offset_right = -3.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_clmuo")
+script = ExtResource("1_aeyrk")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 2
