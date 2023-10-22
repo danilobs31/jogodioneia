@@ -14,3 +14,8 @@ config/name="Jogo Game Jam"
 run/main_scene="res://senas/mundo.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720

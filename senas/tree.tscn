@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://bsr2o2vpw3mtb"]
+
+[ext_resource type="Script" path="res://scripts/tree.gd" id="1_ctw4l"]
+[ext_resource type="Script" path="res://scripts/CollisionShape3D.gd" id="2_rd7ne"]
+[ext_resource type="Texture2D" uid="uid://dhdtjo4e21a0t" path="res://SPRITES/arvore3.png" id="3_x3y51"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_aw6yq"]
+size = Vector3(1.49719, 1, 1.48439)
+
+[node name="tree" type="Node3D"]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0.421782, 0)
+script = ExtResource("1_ctw4l")
+
+[node name="Area3D" type="Area3D" parent="."]
+script = ExtResource("2_rd7ne")
+
+[node name="Sprite3D" type="Sprite3D" parent="Area3D"]
+texture = ExtResource("3_x3y51")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(0.999996, -0.0026878, 0, 0.0026878, 0.999996, 0, 0, 0, 1, 0, -0.400811, 0)
+shape = SubResource("BoxShape3D_aw6yq")
+
+[connection signal="body_entered" from="Area3D" to="Area3D" method="_on_body_entered"]
