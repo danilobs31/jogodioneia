@@ -1,0 +1,13 @@
+res://senas/mundo.tscn
+res://senas/CharacterBody3D.gd
+res://senas/Arvore.tscn
+res://senas/Arvore.gd
+res://senas/arvore.gd
+res://senas/MeshInstance3D2.gd
+res://senas/Node.gd
+res://senas/spawnArvores].gd
+res://senas/checacolid.gd
+res://senas/arvoreAn.gd
+res://senas/arvoreGat.gd
+res://senas/VarGlobais.gd
+res://senas/AreaArvore.gd

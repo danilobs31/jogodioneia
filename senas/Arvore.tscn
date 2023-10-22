@@ -1,0 +1,58 @@
+[gd_scene load_steps=7 format=3 uid="uid://dejgtmbusmv3o"]
+
+[ext_resource type="Texture2D" uid="uid://dhdtjo4e21a0t" path="res://SPRITES/arvore3.png" id="1_2nise"]
+[ext_resource type="Script" path="res://senas/Arvore.gd" id="1_hjhgg"]
+[ext_resource type="Texture2D" uid="uid://byx3jpdjp5ifl" path="res://SPRITES/broto3.png" id="2_77caj"]
+[ext_resource type="Texture2D" uid="uid://cmarolqbmaed4" path="res://SPRITES/toco3.png" id="3_0vnoq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fsmgo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2nise")
+}],
+"loop": true,
+"name": &"arvore",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_77caj")
+}],
+"loop": true,
+"name": &"broto",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"nada",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_0vnoq")
+}],
+"loop": true,
+"name": &"toco",
+"speed": 5.0
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3e6qr"]
+size = Vector3(1.21441, 0.0976035, 1.10396)
+
+[node name="ArvoreScene" type="MeshInstance3D"]
+transform = Transform3D(0.5, 0, 0, 0, -2.18557e-08, -0.5, 0, 0.5, -2.18557e-08, 0, 0.491, -1.68222)
+script = ExtResource("1_hjhgg")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, -2.18557e-08, 0.5, 0, -0.5, -2.18557e-08, 0, -0.073, -0.227105)
+sprite_frames = SubResource("SpriteFrames_fsmgo")
+animation = &"arvore"
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+
+[node name="colisao" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0234079, 0, -0.14981)
+shape = SubResource("BoxShape3D_3e6qr")
+
+[connection signal="body_entered" from="RigidBody3D" to="." method="_on_body_entered"]

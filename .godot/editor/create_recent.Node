@@ -1,0 +1,12 @@
+RigidBody3D
+AnimatedSprite3D
+CollisionShape3D
+Area3D
+Node3D
+AnimatedSprite2D
+MeshInstance3D
+Node
+StaticBody3D
+DirectionalLight3D
+OmniLight3D
+CharacterBody3D
